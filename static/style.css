@@ -1,0 +1,173 @@
+/* helpers */
+
+.txt-right {
+  text-align: right;
+}
+
+html {
+  --width: 800px;
+  --font-main: "DM Sans", sans-serif;
+  --font-secondary: "DM Sans", sans-serif;
+  --font-scale: 1em;
+  --background-color: #fff;
+  --heading-color: #222;
+  --text-color: #444d;
+  --link-color: #3273dc;
+  --visited-color: #8b6fcb;
+  --code-background-color: #333;
+  --code-color: #ddd;
+  --blockquote-color: #222;
+  --border-color: #ccc;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-scale);
+  margin: auto;
+  padding: 20px;
+  max-width: var(--width);
+  text-align: left;
+  background-color: var(--background-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+header button {
+  align-self: flex-end;
+}
+
+header img {
+  height: auto;
+  max-width: 5rem;
+}
+
+nav a {
+  margin-right: 8px;
+}
+
+strong,
+b {
+  color: var(--heading-color);
+}
+
+button {
+  margin: 0;
+  cursor: pointer;
+}
+
+main {
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dashed;
+}
+
+small a {
+  text-transform: lowercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  position: relative;
+  font-family: monospace;
+  font-size: 14px !important;
+  padding: 2px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+}
+
+code.language-console span span:before {
+  content: "$";
+  color: var(--link-color);
+  margin-right: 10px;
+}
+
+blockquote {
+  border-left: 1px solid #999;
+  color: var(--blockquote-color);
+  padding-left: 20px;
+  font-style: italic;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.title:hover {
+  text-decoration: none;
+}
+
+.title h1 {
+  font-size: 1.5em;
+}
+
+.inline {
+  width: auto !important;
+}
+
+pre {
+  border-radius: 5px;
+  overflow: scroll;
+  padding: 0px 15px;
+}
+
+/* blog post list */
+ul.blog-posts {
+  list-style-type: none;
+  padding: unset;
+}
+
+ul.blog-posts li {
+  display: flex;
+}
+
+ul.blog-posts li span {
+  flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: var(--visited-color);
+}
+canvas:not(:last-child) {
+  margin-bottom: 50px;
+}

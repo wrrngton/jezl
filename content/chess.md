@@ -1,0 +1,4 @@
++++
+title = "chess"
+layout= "chess"
++++

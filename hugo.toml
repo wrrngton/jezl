@@ -1,0 +1,12 @@
+baseURL = 'https://jezl.xyz/'
+languageCode = 'en-gb'
+title = 'Jezl'
+[params]
+  favicon = "/images/favicon/favicon-32x32.png" 
+[taxonomies]
+  course = "course"
+  tag = "tags"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

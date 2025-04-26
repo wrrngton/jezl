@@ -1,0 +1,9 @@
+{{ with .Site.GetPage "blog" }}
+<a href="{{ "/blog/" | relURL }}">blog</a>
+{{ end }}
+{{ with .Site.GetPage "snippets" }}
+<a href="{{ "/snippets/" | relURL }}">snippets</a>
+{{ end }}
+{{ with .Site.GetPage "projects" }}
+<a href="{{ "/projects/" | relURL }}">projects</a>
+{{ end }}

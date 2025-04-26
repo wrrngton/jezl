@@ -1,0 +1,12 @@
+{{ define "main" }}
+<content>
+  {{ range $course, $taxonomy := site.Taxonomies.course }}
+  <h2>{{ $course | title }}</h2>
+  <ul class="blog-posts">
+    {{ range $taxonomy.Pages }} {{ if eq .Type "notes" }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }} {{ end }}
+  </ul>
+  {{ end }}
+</content>
+{{ end }}
