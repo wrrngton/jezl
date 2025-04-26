@@ -1,4 +1,4 @@
 +++
-title = "chess"
+title = "chess progress"
 layout= "chess"
 +++

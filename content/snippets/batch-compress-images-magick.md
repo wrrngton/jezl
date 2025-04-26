@@ -1,5 +1,5 @@
 ---
-title: Batch compress image using ImageMagick
+title: Batch compress image using ImageMagick!
 description: Batch compress image using ImageMagick
 tags: ["commandline"]
 ---
