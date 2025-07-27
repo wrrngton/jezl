@@ -21,7 +21,12 @@ exiftool -Title="Big set" -Artist="Wicked skengman" set.m4a
 It's a three hour set and we only want from 2:30:00 until the end, so only the last 30 minutes, for this we can use `ffmpeg`.
 
 ```console
-ffmpeg -ss 2:30:00 -i set.m4a -c copy output.m4a
+ffmpeg -i set.m4a -ss 2:30:00 -c copy output.m4a
+```
+Alternatively between two timestamps:
+
+```console
+ffmpeg -i set.m4a -ss 2:30:00 -to 2:50:00 -c copy output.m4a
 ```
 
 `copy` copies the file without re-encoding.
