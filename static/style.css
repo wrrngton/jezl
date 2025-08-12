@@ -4,6 +4,18 @@
   text-align: right;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
 html {
   --width: 800px;
   --font-main: "DM Sans", sans-serif;
@@ -168,6 +180,7 @@ ul.blog-posts li span {
 ul.blog-posts li a:visited {
   color: var(--visited-color);
 }
+
 canvas:not(:last-child) {
   margin-bottom: 50px;
 }

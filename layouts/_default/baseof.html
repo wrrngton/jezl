@@ -33,11 +33,21 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <script src="/chess-charts.js" defer></script>
     {{ end }}
+  
+    {{ if eq .RelPermalink "/snippets/" }}
+      <script src="/search.js" defer></script>
+    {{ end }}
+
   </head>
 
   <body>
     <header>{{- partial "header.html" . -}}</header>
-    <main>{{- block "main" . }}{{- end }}</main>
+    <main>
+
+      {{- block "main" . }}
+
+      {{- end }}
+    </main>
     <footer>{{- partial "footer.html" . -}}</footer>
   </body>
 </html>

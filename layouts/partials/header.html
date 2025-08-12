@@ -1,7 +1,12 @@
-<div>
+<div class="w-full">
     <img src="/images/avatar/avatar.jpg" alt="avatar ">
     <a href="{{ "" | relURL }}" class="title">
       <h2>{{ .Site.Title }}</h2>
     </a>
+  <div class="flex space-between">
   <nav>{{- partial "nav.html" . -}}</nav>
+  {{ if eq .RelPermalink "/snippets/" }}
+    <input type="text" placeholder="search..." id="search"></input>
+    {{- end }}
+  </div>
 </div>

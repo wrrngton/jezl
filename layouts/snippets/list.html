@@ -7,11 +7,10 @@
   </small>
   {{ end }}
   <ul class="blog-posts">
-    {{ range .Pages }}
-    <li>
+    {{ range $index, $page := .Pages }}
+    <li id="snippet-{{ add $index 1 }}">
         <a href="{{ .Permalink }}">
-
-        {{ .Title }}
+          {{ .Title }}
         </a>
     </li>
     {{ else }}
