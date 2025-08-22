@@ -5,13 +5,13 @@ const results = document.querySelector(".blog-posts");
 const documents = Array.from(items).map((item) => {
   return {
     id: item.id,
-    title: item.innerText.replaceAll("\n", "").trim(),
+    title: item.innerText.replaceAll("\n", "").trim().toLowerCase(),
     innerHtml: item.innerHTML,
   };
 });
 
 searchBox.addEventListener("input", (e) => {
-  q = e.target.value;
+  q = e.target.value.toLowerCase();
 
   const matchingItems = documents.filter((doc) => doc.title.includes(q));
 
